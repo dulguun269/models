@@ -1,5 +1,5 @@
 from flask import Flask
-from your_models_lib import db, Person
+from models import db, Person
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
@@ -7,9 +7,11 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db.init_app(app)
 
+
 @app.route('/')
 def index():
     return "✅ Flask app running with shared models!"
+
 
 if __name__ == '__main__':
     with app.app_context():
