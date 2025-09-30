@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='models_lib',
-    version='0.1.2',
+    version='0.1.3',
     description='Reusable SQLAlchemy models for Flask apps',
     author='dulguun',
     packages=find_packages(),
