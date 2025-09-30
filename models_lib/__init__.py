@@ -1,3 +1,4 @@
+__version__ = "0.1.2"
 from .models import db
 from .models import ClUser, Person, Customer, PersonDtl, PersonBankAccount
 

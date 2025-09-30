@@ -2,14 +2,14 @@ from setuptools import setup, find_packages
 
 setup(
     name='models_lib',
-    version='0.1.0',
+    version='0.1.2',
     description='Reusable SQLAlchemy models for Flask apps',
-    author='Your Name',
+    author='dulguun',
     packages=find_packages(),
     install_requires=[
         'Flask>=2.0',
         'Flask-SQLAlchemy>=3.0',
         'sqlalchemy_serializer',
     ],
-    python_requires='>=3.8',
+    python_requires='>=3.11',
 )
